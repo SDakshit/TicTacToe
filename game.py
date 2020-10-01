@@ -72,7 +72,9 @@ def maingame():
                 display_board(game_board)
                 print(player + " is the winner! ")
                 break 
-         if count == 9:                 
+
+        if count == 9:  
+
             print("Nobody wins. It's a tie ")
             break
 
