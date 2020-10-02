@@ -84,5 +84,16 @@ def maingame():
             player = 'x'        
     
 
-maingame()
+    # We will ask the player wheather to restart the game or not
+    restart = input("Do want to play Again?(y/n)")
+    if restart == "y" or restart == "Y":
+        for key in keys:
+            game_board[key] = " "
+
+        maingame()
+
+
+if __name__ == "__main__":
+    maingame()
+
        
